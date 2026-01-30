@@ -15,6 +15,39 @@
   including TikTok, YouTube, Facebook, Instagram, and LinkedIn.
 </p>
 
+<hr>
+
+<h2>Login with TikTok</h2>
+
+<p>
+Users must authenticate with their TikTok account before publishing content.
+</p>
+
+<a href="https://www.tiktok.com/v2/auth/authorize/?client_key=awjms7lo2i6hhmp2&scope=user.info.basic,video.upload,video.publish&response_type=code&redirect_uri=https://ngo-forum.github.io/tiktok/&state=123">
+  <button style="padding:12px 20px;font-size:16px;">
+    Login with TikTok
+  </button>
+</a>
+
+<h3>How It Works</h3>
+<ol>
+  <li>User clicks "Login with TikTok"</li>
+  <li>User authorizes NGOF Media Manager</li>
+  <li>User is redirected back to this website</li>
+  <li>User uploads and publishes video using TikTok Content Posting API</li>
+</ol>
+
+<hr>
+
+<h2>Upload Video (Demo)</h2>
+<form>
+  <input type="file"><br><br>
+  <textarea placeholder="Write caption..."></textarea><br><br>
+  <button type="submit">Post to TikTok</button>
+</form>
+
+<hr>
+
 <h2>About This Website</h2>
 <p>
   This website contains legal and informational pages required for TikTok API integration
