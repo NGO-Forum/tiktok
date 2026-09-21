@@ -2,68 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NGOF Media Manager</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NGOF Media Manager is a social media content management platform for authorized staff of The NGO Forum on Cambodia.">
+  <title>NGOF Media Manager | The NGO Forum on Cambodia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">N</span>
+      <span>NGOF Media Manager<small>The NGO Forum on Cambodia</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#tiktok">TikTok</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a class="nav-cta" href="https://media.ngoforum.org.kh">Open Application</a>
+    </nav>
+  </div>
+</header>
 
-<h1>NGOF Media Manager</h1>
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">Official organizational media platform</span>
+      <h1>Manage approved social media content in one place.</h1>
+      <p>NGOF Media Manager helps authorized staff of The NGO Forum on Cambodia prepare, coordinate and publish official media content through supported social media platforms and their approved APIs.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="https://media.ngoforum.org.kh">Open NGOF Media Manager</a>
+        <a class="btn btn-outline" href="#tiktok">Explore TikTok Integration</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <h3>How the platform works</h3>
+      <div class="flow">
+        <div class="flow-item">01 &nbsp; Authorized staff signs in</div>
+        <div class="flow-item">02 &nbsp; Social account is connected through its official authorization flow</div>
+        <div class="flow-item">03 &nbsp; Approved media and caption are prepared</div>
+        <div class="flow-item">04 &nbsp; Content is submitted through the supported platform API</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>
-  NGOF Media Manager is a web platform developed for The NGO Forum on Cambodia.
-  It helps authorized staff manage and publish official media content to social platforms
-  including TikTok, YouTube, Facebook, Instagram, and LinkedIn.
-</p>
+<main>
+  <section id="about" class="section">
+    <div class="section-heading">
+      <h2>About NGOF Media Manager</h2>
+      <p>A centralized workspace designed for official organizational communication and social media publishing.</p>
+    </div>
+    <div class="notice">
+      <strong>Authorized use:</strong> NGOF Media Manager is intended for authorized personnel and official organizational social media accounts. A user must authenticate and grant permission before the application can use a supported social media integration on that user's behalf.
+    </div>
+  </section>
 
-<hr>
+  <section id="features" class="section">
+    <div class="section-heading">
+      <h2>What the platform provides</h2>
+      <p>The platform supports a controlled workflow from preparing content to publishing through supported social media APIs.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="card-icon">01</div><h3>Content Management</h3><p>Prepare captions and media files for official organizational communications before publication.</p></article>
+      <article class="card"><div class="card-icon">02</div><h3>Account Connections</h3><p>Connect authorized social media accounts through the authentication and permission flow provided by each platform.</p></article>
+      <article class="card"><div class="card-icon">03</div><h3>Publishing Workflow</h3><p>Submit approved content to supported social platforms using their available official APIs.</p></article>
+    </div>
+  </section>
 
-<h2>Login with TikTok</h2>
+  <section id="tiktok" class="section">
+    <div class="section-heading">
+      <h2>TikTok integration</h2>
+      <p>NGOF Media Manager uses TikTok for Developers products to support authorized TikTok account connections and content publishing workflows.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><div class="step-number">1</div><h3>Connect TikTok</h3><p>An authorized user chooses TikTok inside NGOF Media Manager and is redirected to TikTok's authorization page.</p></article>
+      <article class="step"><div class="step-number">2</div><h3>Authorize access</h3><p>The user signs in to TikTok and explicitly grants the permissions requested by the application.</p></article>
+      <article class="step"><div class="step-number">3</div><h3>Return securely</h3><p>TikTok returns an authorization response to the registered application callback, where the backend completes the authorization process.</p></article>
+      <article class="step"><div class="step-number">4</div><h3>Publish selected content</h3><p>The authorized user can use the available Content Posting API workflow for media selected in the application.</p></article>
+    </div>
+  </section>
 
-<p>
-Users must authenticate with their TikTok account before publishing content.
-</p>
+  <section class="section">
+    <div class="section-heading">
+      <h2>Responsible and authorized use</h2>
+      <p>Content published through the platform is intended for official organizational communication.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><h3>User authorization</h3><p>Social accounts are connected only after the user completes the applicable platform authorization flow.</p></article>
+      <article class="card"><h3>Content responsibility</h3><p>Users are responsible for ensuring that content is authorized and complies with applicable platform and organizational requirements.</p></article>
+      <article class="card"><h3>Data protection</h3><p>Information is handled according to our Privacy Policy and is used to operate the requested social media integration.</p></article>
+    </div>
+  </section>
 
-<a href="https://www.tiktok.com/v2/auth/authorize/?client_key=awjms7lo2i6hhmp2&scope=user.info.basic,video.upload,video.publish&response_type=code&redirect_uri=https://ngo-forum.github.io/tiktok/&state=123">
-  <button style="padding:12px 20px;font-size:16px;">
-    Login with TikTok
-  </button>
-</a>
+  <section class="section">
+    <div class="section-heading">
+      <h2>Legal and privacy information</h2>
+      <p>Read how the service operates and how information is handled.</p>
+    </div>
+    <div class="legal-links">
+      <a class="legal-link" href="privacy.html"><span><strong>Privacy Policy</strong><span>Information handling, security, retention and deletion</span></span><b>→</b></a>
+      <a class="legal-link" href="terms.html"><span><strong>Terms of Service</strong><span>Rules for using NGOF Media Manager and integrations</span></span><b>→</b></a>
+    </div>
+  </section>
 
-<h3>How It Works</h3>
-<ol>
-  <li>User clicks "Login with TikTok"</li>
-  <li>User authorizes NGOF Media Manager</li>
-  <li>User is redirected back to this website</li>
-  <li>User uploads and publishes video using TikTok Content Posting API</li>
-</ol>
+  <section class="section">
+    <div class="section-heading">
+      <h2>Contact</h2>
+      <p>For questions about NGOF Media Manager or privacy requests, contact the NGOF IT team.</p>
+    </div>
+    <div class="notice"><strong>Email:</strong> <a href="mailto:info@ngoforum.org.kh">info@ngoforum.org.kh</a></div>
+  </section>
+</main>
 
-<hr>
-
-<h2>Upload Video (Demo)</h2>
-<form>
-  <input type="file"><br><br>
-  <textarea placeholder="Write caption..."></textarea><br><br>
-  <button type="submit">Post to TikTok</button>
-</form>
-
-<hr>
-
-<h2>About This Website</h2>
-<p>
-  This website contains legal and informational pages required for TikTok API integration
-  and for users of the NGOF Media Manager.
-</p>
-
-<h2>Contact</h2>
-<p>Email: info@ngoforum.org.kh</p>
-
-<hr>
-
-<h2>Legal Pages</h2>
-<ul>
-  <li><a href="terms.html">Terms of Service</a></li>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-</ul>
-
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">NGOF Media Manager</div>
+        <div class="footer-copy">An organizational social media management platform for The NGO Forum on Cambodia.</div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="https://media.ngoforum.org.kh">Open Application</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 The NGO Forum on Cambodia. All rights reserved.</div>
+  </div>
+</footer>
 </body>
 </html>
